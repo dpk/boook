@@ -1,0 +1,203 @@
+@import url('reset.css');
+
+@font-face {
+  font-family: 'Libertine';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/Libertine-R.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertine';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/Libertine-I.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertine';
+  font-weight: bold;
+  font-style: italic;
+  src: url('/Libertine-BI.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertine';
+  font-weight: bold;
+  font-style: normal;
+  src: url('/Libertine-B.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertine';
+  font-weight: 600;
+  font-style: normal;
+  src: url('/Libertine-S.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertine';
+  font-weight: 600;
+  font-style: italic;
+  src: url('/Libertine-SI.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Libertine Display';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/LibertineDisplay-R.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Libertine Small Caps';
+  font-weight: normal;
+  font-style: normal;
+  src: url('/LibertineSC-R.woff') format('woff');
+}
+@font-face {
+  font-family: 'Libertine Small Caps';
+  font-weight: normal;
+  font-style: italic;
+  src: url('/LibertineSC-I.woff') format('woff');
+}
+
+html { max-width: 1650px; }
+body {
+  font-family: 'Libertine', serif;
+  /*background-image: url('grid.png');*/
+  color: #333;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 48px 34% 24px 9%;
+  hyphens: auto;
+ -webkit-hyphens: auto;
+ -o-hyphens: auto;
+ -ms-hyphens: auto;
+}
+body > header, body > hgroup {
+  margin-bottom: 24px;
+}
+
+h1, h2, h3, h4 {
+  hyphens: none;
+ -webkit-hyphens: none;
+ -o-hyphens: none;
+ -ms-hyphens: none;
+}
+
+h1 {
+  font-family: 'Libertine Display';
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 72px;
+}
+
+h2 {
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 48px;
+}
+
+
+h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 24px;
+  line-height: 48px;
+  margin-top: 6px;
+  margin-bottom: -6px;
+}
+
+h4 {
+  padding-top: 24px;
+}
+
+:not(.admargin) { clear: left; }
+
+.admarginbox > :not(.admargin) {
+  float: left;
+}
+.admarginbox .admargin {
+  float: right;
+  width: 41.5204679%;
+  margin-top: -2px;
+  font-size: 12px;
+  line-height: 18px;
+  margin-right: -43.8596492%;
+}
+
+/* the following assumes that admarginboxes end with paragraphs on the left */
+p + p, p + .admarginbox > p, .admarginbox + p { text-indent: 1em; }
+
+a:link, a:visited { color: rgb(35,100,158); }
+
+blockquote {
+  font-size: 14px;
+  line-height: 24px;
+  margin: 0 1em;
+}
+
+hr {
+  border: none;
+  margin: 24px;
+  height: 24px;
+  width: 100%;
+  font-size: 36px;
+  text-align: center;
+}
+hr:after {
+  content: '\2042';
+}
+li { margin-left: 2em; }
+
+footer {
+  margin-top: 24px;
+  font-style: italic;
+  text-align: right;
+}
+
+.sc { font-family: 'Libertine Small Caps'; }
+
+dd { margin-left: 1em; }
+dd + dt { margin-top: 24px; }
+
+@media screen and (max-width: 700px) {
+  body {
+    margin-right: 9%;
+  }
+  .admarginbox :not(.admargin) {
+    float: none;
+  }
+  .admarginbox .admargin {
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+  .admarginbox .admargin p { text-indent: 1.5em;  }
+}
+
+@media screen and (min-width: 950px) {
+  body {
+    margin-right: 42.3333333%;
+  }
+  .admarginbox .admargin {
+    width: 45.8064517%;
+    margin-right: -48.3870969%
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    margin-right: 50.6666667%;
+  }
+  .admarginbox .admargin {
+    width: 46.7105264%;
+    margin-right: -49.3421053%
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  body {
+    margin-right: 59%;
+  }
+  .admarginbox .admargin {
+    width: 37.398374%;
+    margin-right: -40.6504065%;
+  }
+}
